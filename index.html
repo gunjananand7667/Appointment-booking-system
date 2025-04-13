@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Appointment Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Book Your Appointment</h1>
+    <form id="appointmentForm">
+      <label>Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Phone:</label>
+      <input type="text" name="phone" required>
+
+      <label>Select Doctor:</label>
+      <select name="doctor" required>
+        <option value="Dr. Mehta">Dr. Mehta</option>
+        <option value="Dr. Sharma">Dr. Sharma</option>
+        <option value="Dr. Roy">Dr. Roy</option>
+        <option value="Dr. Gupta">Dr. Gupta</option>
+      </select>
+
+      <label>Date:</label>
+      <input type="date" name="date" required>
+
+      <label>Message:</label>
+      <textarea name="message" rows="3">Type your Problem here...</textarea>
+      <button type="submit">Book Appointment</button>
+    </form>
+
+    <div id="confirmation" style="display:none;">
+      <h2>Appointment Booked Successfully!</h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
